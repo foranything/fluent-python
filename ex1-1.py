@@ -1,4 +1,5 @@
 import collections
+from random import choice
 
 Card = collections.namedtuple('Card', ['rank', 'suit'])
 
@@ -18,4 +19,6 @@ class FrenchDeck:
 
 ins1 = FrenchDeck()
 
-print(ins1.__getitem__(51))
+print(len(ins1)) ##print(ins1.__len__())
+print(ins1[51]) ##print(ins1.__getitem__(51))
+print(choice(ins1))
